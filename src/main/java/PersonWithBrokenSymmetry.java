@@ -1,10 +1,15 @@
 import java.util.Objects;
 
-public class BrokenSymmetry {
+public class PersonWithBrokenSymmetry {
     private String name;
 
-    public BrokenSymmetry(String name) {
+    public PersonWithBrokenSymmetry(String name) {
         this.name = name;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 
     @Override

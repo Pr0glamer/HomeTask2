@@ -1,10 +1,10 @@
 import java.util.Objects;
 
-public class BrokenHashcode {
+public class PersonWithBrokenHashcode {
 
     private String name;
 
-    public BrokenHashcode(String name) {
+    public PersonWithBrokenHashcode(String name) {
         this.name = name;
     }
 
@@ -12,7 +12,7 @@ public class BrokenHashcode {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        BrokenHashcode that = (BrokenHashcode) o;
+        PersonWithBrokenHashcode that = (PersonWithBrokenHashcode) o;
         return Objects.equals(name, that.name);
     }
 
